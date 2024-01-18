@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alumnFragmentMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/alumne_image_menu"
+        android:title="ALUMNES" />
+
+    <item
+        android:id="@+id/groupFragmentMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/group_image_menu"
+        android:title="GRUP" />
+</menu>

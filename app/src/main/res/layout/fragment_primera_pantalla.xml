@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.primeraPantallaFragment">
+
+        <EditText
+            android:id="@+id/nomEditTextAlumne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/nom"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/notaEditTextAlumne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/nota"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/grupEditTextAlumne"
+            app:layout_constraintTop_toBottomOf="@+id/grupEditTextAlumne" />
+
+        <EditText
+            android:id="@+id/grupEditTextAlumne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/grup"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="@+id/nomEditTextAlumne"
+            app:layout_constraintTop_toBottomOf="@+id/nomEditTextAlumne" />
+
+        <Button
+            android:id="@+id/buttonInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="102dp"
+            android:text="@string/insert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notaEditTextAlumne" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

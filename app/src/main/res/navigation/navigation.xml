@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/alumnFragmentMenu">
+
+    <fragment
+        android:id="@+id/alumnFragmentMenu"
+        android:name="com.ruben.examenuf1.ui.primeraPantallaFragment"
+        android:label="primeraPantallaFragment" >
+        <action
+            android:id="@+id/action_primeraPantallaFragment_to_segonaPantallaFragment"
+            app:destination="@id/groupFragmentMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFragmentMenu"
+        android:name="com.ruben.examenuf1.ui.segonaPantallaFragment"
+        android:label="segonaPantallaFragment" >
+        <action
+            android:id="@+id/action_segonaPantallaFragment_to_primeraPantallaFragment"
+            app:destination="@id/alumnFragmentMenu" />
+    </fragment>
+</navigation>
